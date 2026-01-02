@@ -10,15 +10,22 @@
             color: #fff;
             font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
         }
 
+        .box {
+            background-color: #333;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            width: 400px;
+        }
+
         h1 {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         a button {
@@ -34,12 +41,26 @@
         a button:hover {
             background-color: #ffaa00;
         }
+
+        .warning {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 30px;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body>
-    <h1>Uranium.Dev Dashboard</h1>
-    <a href="login.html">
-        <button>Login</button>
-    </a>
+    <div class="box">
+        <h1>Uranium.Dev Dashboard</h1>
+        <a href="login.html">
+            <button>Login</button>
+        </a>
+        <p class="warning">
+            This login page is strictly monitored and all failed authentications are logged.<br><br>
+            Using any mods, trying to break in, or trying to infiltrate the dashboard will result in your IP being blacklisted and reported.<br><br>
+            If you do not have access to the Uranium.Dev dashboard, leave this page ASAP.
+        </p>
+    </div>
 </body>
 </html>
